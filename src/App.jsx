@@ -14,7 +14,7 @@ export const Home = () => {
   const login = () => {
     const url = "http://localhost:4001/auth";
     fetch(`${url}/login`, {
-      credentials: "include",
+      // credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -28,7 +28,7 @@ export const Home = () => {
   const credentials = () => {
     const url = "http://localhost:4001/auth";
     fetch(`${url}/credentials`, {
-      credentials: "include",
+      // credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -43,7 +43,7 @@ export const Home = () => {
     // const url = "http://localhost:4001/auth";
     const Live = "https://cookie-test-server.onrender.com/auth";
     fetch(`${Live}/logout`, {
-      credentials: "include",
+      // credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
