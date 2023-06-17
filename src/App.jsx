@@ -15,7 +15,7 @@ export const Home = () => {
   const url = "https://cookie-test-server.onrender.com/auth";
   const login = () => {
     fetch(`${url}/login`, {
-      // credentials: "include",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -28,7 +28,7 @@ export const Home = () => {
   };
   const credentials = () => {
     fetch(`${url}/credentials`, {
-      // credentials: "include",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -41,7 +41,7 @@ export const Home = () => {
   };
   const logout = () => {
     fetch(`${url}/logout`, {
-      // credentials: "include",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
