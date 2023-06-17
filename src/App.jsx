@@ -11,8 +11,9 @@ function App() {
 export default App;
 
 export const Home = () => {
+  // const url = "http://localhost:4001/auth";
+  const url = "https://cookie-test-server.onrender.com/auth";
   const login = () => {
-    const url = "http://localhost:4001/auth";
     fetch(`${url}/login`, {
       // credentials: "include",
       headers: {
@@ -26,7 +27,6 @@ export const Home = () => {
       .catch(console.error);
   };
   const credentials = () => {
-    const url = "http://localhost:4001/auth";
     fetch(`${url}/credentials`, {
       // credentials: "include",
       headers: {
@@ -40,9 +40,7 @@ export const Home = () => {
       .catch(console.error);
   };
   const logout = () => {
-    // const url = "http://localhost:4001/auth";
-    const Live = "https://cookie-test-server.onrender.com/auth";
-    fetch(`${Live}/logout`, {
+    fetch(`${url}/logout`, {
       // credentials: "include",
       headers: {
         "Content-Type": "application/json",
