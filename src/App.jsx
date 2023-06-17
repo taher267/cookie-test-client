@@ -40,8 +40,9 @@ export const Home = () => {
       .catch(console.error);
   };
   const logout = () => {
-    const url = "http://localhost:4001/auth";
-    fetch(`${url}/logout`, {
+    // const url = "http://localhost:4001/auth";
+    const Live = "https://cookie-test-server.onrender.com/auth";
+    fetch(`${Live}/logout`, {
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
